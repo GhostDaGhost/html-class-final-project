@@ -215,7 +215,7 @@
 }
 
 /* ====================================================== */
-/* ======================== MENU ======================== */
+/* ===================== MENU BANNER ==================== */
 /* ====================================================== */
 
 /* Menu Banner Wrapper */
@@ -261,6 +261,51 @@
     font-variant: small-caps;
     text-shadow: 4px 4px rgba(0, 0, 0, 0.25);
     box-shadow: inset 400px 400px rgba(0, 0, 0, 0.2);
+}
+
+/* ====================================================== */
+/* ======================== MENU ======================== */
+/* ====================================================== */
+
+/* Menu Wrapper */
+#menu-wrapper {
+    /* Size */
+    width: 100vw;
+    height: 800px;
+}
+
+/* Menu Banner Contents */
+#menu-fore,
+#menu-bg {
+    position: absolute;
+    width: 100vw;
+    height: 800px;
+}
+
+#menu-fore {
+    /* Position children */
+    display: flex;
+    flex-direction: column;
+    justify-content: start;
+    align-items: center;
+    padding: 40px;
+    box-sizing: border-box;
+}
+
+#menu-bg {
+    background-image: url("../images/menu-texture.jpg");
+    filter: grayscale(90%) contrast(10%) brightness(140%);
+}
+
+#menu th,
+#menu td {
+    border: 2px solid black;
+    padding: 10px;
+}
+
+.menu-img {
+    width: 128px;
+    height: 128px;
 }
 
 /* ====================================================== */
