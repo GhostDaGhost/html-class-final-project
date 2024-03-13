@@ -1,0 +1,25 @@
+#top-bar {
+    /* Keep in place while scrolling */
+    position: absolute;
+    top: 0;
+    left: 0;
+    /* Size */
+    width: 100vw;
+    height: 80px;
+    box-sizing: border-box;
+    /* Position children */
+    display: flex;
+    padding: 12px 80px;
+    align-items: center;
+    justify-content: space-between;
+    /* Style */
+    background-color: white;
+    font-size: 20px;
+}
+
+#nav-main {
+    /* Position children */
+    display: flex;
+    padding: 8px 16px;
+    gap: 40px;
+}
