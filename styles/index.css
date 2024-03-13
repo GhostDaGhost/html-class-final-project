@@ -192,7 +192,7 @@
     outline: none;
     cursor: pointer;
 
-    transition: .2s ease-in-out;
+    transition: 0.2s ease-in-out;
     border: 1px solid black;
     border-radius: 3.5px;
 }
@@ -212,6 +212,55 @@
 
 #contact_resetbutton:hover {
     background-color: rgb(161, 2, 2);
+}
+
+/* ====================================================== */
+/* ======================== MENU ======================== */
+/* ====================================================== */
+
+/* Menu Banner Wrapper */
+#menu-banner {
+    width: 100vw;
+    height: 100px;
+    box-shadow: 0 0 48px rgba(0, 0, 0, 0.6);
+}
+
+/* Menu Banner Contents */
+#menu-banner-fore,
+#menu-banner-bg {
+    position: absolute;
+    width: 100vw;
+    height: 100px;
+}
+
+#menu-banner-fore {
+    /* Postion children */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+#menu-banner-bg {
+    /* Background */
+    background-image: linear-gradient(
+            rgba(0, 0, 0, 0.5),
+            rgba(0, 0, 0, 0.2) 50%,
+            rgba(0, 0, 0, 0.5) 100%
+        ),
+        url("../images/menu-banner.jpg");
+    background-position: 0% -50%;
+    filter: contrast(50%) brightness(80%);
+}
+
+#menu-title {
+    /* Size */
+    font-size: 60px;
+    padding: 15px 40px;
+    /* Style */
+    color: #e3dff2;
+    font-variant: small-caps;
+    text-shadow: 4px 4px rgba(0, 0, 0, 0.25);
+    box-shadow: inset 400px 400px rgba(0, 0, 0, 0.2);
 }
 
 /* ====================================================== */
