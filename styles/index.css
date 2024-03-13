@@ -3,10 +3,6 @@
 /* ====================================================== */
 
 #top-bar {
-    /* Keep in place while scrolling */
-    position: absolute;
-    top: 0;
-    left: 0;
     /* Size */
     width: 100vw;
     height: 80px;
@@ -85,13 +81,67 @@
 }
 
 /* ====================================================== */
+/* ==================== INFO SECTION ==================== */
+/* ====================================================== */
+
+#info {
+    /* Size */
+    width: 100vw;
+    padding-bottom: 40px;
+    /* Style */
+    background: #f8d6b3;
+    /* Position children */
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+#info > h2 {
+    /* Magic number to fit on one line */
+    font-size: 5vw;
+}
+
+#info-cards {
+    /* Size */
+    width: 80%;
+    height: 80%;
+    /* Position children */
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    gap: 40px;
+}
+
+.card {
+    /* Size */
+    width: 200px;
+    height: 200px;
+    /* Position children */
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+.card > img {
+    /* Size */
+    width: 80%;
+    height: 60%;
+}
+.card > h4 {
+    /* Size */
+    font-size: 18px;
+    margin: 0;
+}
+.card > p {
+    /* Size */
+    font-size: 12px;
+    margin: 0;
+}
+
+/* ====================================================== */
 /* ==================== MEDIA QUERIES =================== */
 /* ====================================================== */
 
 /* Make fonts and images smaller on smaller screens */
-@media (max-width: 1000px) {
-}
-
 @media (max-width: 800px) {
     #hero-desc > h2 {
         font-size: 38px;
