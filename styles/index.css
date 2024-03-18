@@ -192,7 +192,7 @@
     outline: none;
     cursor: pointer;
 
-    transition: .2s ease-in-out;
+    transition: 0.2s ease-in-out;
     border: 1px solid black;
     border-radius: 3.5px;
 }
@@ -241,7 +241,7 @@
     width: 330px;
     height: 200px;
     border-radius: 6px;
-    transition: transform .2s ease-in-out;
+    transition: transform 0.2s ease-in-out;
 }
 
 .gallery_image img:hover {
@@ -256,6 +256,100 @@
     #gallery_grid {
         grid-template-columns: repeat(1, 1fr);
     }
+}
+
+/* ====================================================== */
+/* ===================== MENU BANNER ==================== */
+/* ====================================================== */
+
+/* Menu Banner Wrapper */
+#menu-banner {
+    width: 100vw;
+    height: 100px;
+    box-shadow: 0 0 48px rgba(0, 0, 0, 0.6);
+}
+
+/* Menu Banner Contents */
+#menu-banner-fore,
+#menu-banner-bg {
+    position: absolute;
+    width: 100vw;
+    height: 100px;
+}
+
+#menu-banner-fore {
+    /* Postion children */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+#menu-banner-bg {
+    /* Background */
+    background-image: linear-gradient(
+            rgba(0, 0, 0, 0.5),
+            rgba(0, 0, 0, 0.2) 50%,
+            rgba(0, 0, 0, 0.5) 100%
+        ),
+        url("../images/menu-banner.jpg");
+    background-position: 0% -50%;
+    filter: contrast(50%) brightness(80%);
+}
+
+#menu-title {
+    /* Size */
+    font-size: 60px;
+    padding: 15px 40px;
+    /* Style */
+    color: #e3dff2;
+    font-variant: small-caps;
+    text-shadow: 4px 4px rgba(0, 0, 0, 0.25);
+    box-shadow: inset 400px 400px rgba(0, 0, 0, 0.2);
+}
+
+/* ====================================================== */
+/* ======================== MENU ======================== */
+/* ====================================================== */
+
+/* Menu Wrapper */
+#menu-wrapper {
+    /* Size */
+    width: 100vw;
+    height: 800px;
+}
+
+/* Menu Banner Contents */
+#menu-fore,
+#menu-bg {
+    position: absolute;
+    width: 100vw;
+    height: 800px;
+}
+
+#menu-fore {
+    /* Position children */
+    display: flex;
+    flex-direction: column;
+    justify-content: start;
+    align-items: center;
+    padding: 40px;
+    box-sizing: border-box;
+}
+
+#menu-bg {
+    background-image: url("../images/menu-texture.jpg");
+    filter: grayscale(90%) contrast(10%) brightness(140%);
+}
+
+#menu th,
+#menu td {
+    border: 2px solid black;
+    padding: 10px;
+}
+
+.menu-img {
+    width: 128px;
+    height: 128px;
 }
 
 /* ====================================================== */
